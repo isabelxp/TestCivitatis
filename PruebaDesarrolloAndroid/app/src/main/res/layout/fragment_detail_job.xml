@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.fragments.detail_fragment.DetailJobFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="@dimen/item_padding_vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="@dimen/img_item_size_max"
+            android:layout_height="@dimen/img_item_size_max"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitleJob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/title_job"
+            android:maxLines="1"
+            android:textAppearance="@style/ItemLarge"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgPhoto" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvCompanyName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:hint="@string/company_name_job"
+            android:maxLines="1"
+            android:textAppearance="@style/ItemMedium"
+            app:layout_constraintStart_toStartOf="@+id/tvTitleJob"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleJob" />
+
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/location_job"
+            app:layout_constraintStart_toStartOf="@+id/tvCompanyName"
+            app:layout_constraintTop_toBottomOf="@+id/tvCompanyName" />
+
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_job"
+            app:layout_constraintStart_toStartOf="@+id/tvLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/date_job"
+            app:layout_constraintStart_toStartOf="@+id/tvLocation"
+            app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+
+        <TextView
+            android:id="@+id/tvUrlJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            app:layout_constraintStart_toStartOf="@+id/tvType"
+            app:layout_constraintTop_toBottomOf="@+id/tvType" />
+
+        <TextView
+            android:id="@+id/tvDetailJob"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="@string/detail_job"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvType"
+            app:layout_constraintTop_toBottomOf="@+id/tvUrlJob" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

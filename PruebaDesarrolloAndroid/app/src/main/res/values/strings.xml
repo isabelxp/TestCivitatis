@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">TestAndroid</string>
+
+
+    <!-- Item_job -->
+    <string name="title_job">Titulo del puesto</string>
+    <string name="company_name_job">Nombre de la compañia</string>
+    <string name="location_job">Localizacion</string>
+    <string name="type_job">Tipo</string>
+    <string name="date_job">Fecha</string>
+
+    <!-- detail_job -->
+    <string name="url_job">URL</string>
+    <string name="detail_job">Detalle</string>
+
+    <string name="handle_error">Handle Error</string>
+
+
+</resources>
